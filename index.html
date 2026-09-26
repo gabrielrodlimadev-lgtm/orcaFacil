@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OrçaFácil | Gerador de orçamentos</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1>OrçaFácil</h1>
+    <p>Crie orçamentos de forma simples e rápida.</p>
+  </header>
+
+  <main class="conteudo">
+    <section class="editor" aria-labelledby="titulo-editor">
+      <h2 id="titulo-editor">Monte seu orçamento</h2>
+      <p>Preencha os dados e adicione os serviços.</p>
+      <form id="form-orcamento">
+  <fieldset>
+    <legend>Seus dados</legend>
+
+    <div class="campo">
+      <label for="prestador">Seu nome ou empresa</label>
+      <input
+        type="text"
+        id="prestador"
+        name="prestador"
+        required
+      >
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Dados do cliente</legend>
+
+    <div class="campo">
+      <label for="cliente">Nome do cliente</label>
+      <input
+        type="text"
+        id="cliente"
+        name="cliente"
+        required
+      >
+    </div>
+
+    <div class="campo">
+      <label for="email-cliente">E-mail do cliente (opcional)</label>
+      <input
+        type="email"
+        id="email-cliente"
+        name="emailCliente"
+      >
+    </div>
+  </fieldset>
+
+  <button type="submit">Gerar orçamento</button>
+</form>
+    </section>
+
+    <section class="previa" aria-labelledby="titulo-previa">
+      <h2 id="titulo-previa">Prévia do orçamento</h2>
+      <p>Seu orçamento aparecerá aqui.</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por Gabriel Rodrigues.</p>
+  </footer>
+</body>
+</html>
